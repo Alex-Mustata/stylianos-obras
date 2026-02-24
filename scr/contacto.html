@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Contacta con nuestros expertos.">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="contacto.css">
+        <link rel="stylesheet" href="contacto_movil.css">
+    </head>
+    <body>
+        <div id="contenedor_logo">
+            <img src="Texto.png" alt="Logo" id="logo">
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li id="menu_reformas"><a href="reformas.html">Reformas</a> 
+                    <ul>
+                        <li><a href="reforma_integral.html">Integrales</a></li>
+                        <li><a href="reforma_cocina.html">Cocina</a></li>
+                        <li><a href="reforma_banno.html">Baño</a></li>
+                    </ul>
+                </li>
+                <li><a href="fontaneria.html">Fontanería</a></li>
+                <li><a href="electricidad.html">Electricidad</a></li>
+                <li><a href="parquet.html">Parquet</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div id="cuerpo">
+            <div id="formulario">
+                <form>
+                    <div id="caja_nombre">
+                        <h3>Nombre:</h3>
+                        <input type="text" name="nombre" size="30"> <br>
+                    </div>
+
+                    <div id="caja_sexo">
+                        <h3>Sexo:</h3>
+                        <input type="radio" name="sexo" value="masculino"> <p>Masculino</p> 
+                        <input type="radio" name="sexo" value="femenino"> <p>Femenino</p> 
+                        <input type="radio" name="sexo" value="otro"> <p>Otro</p>
+                        <input type="radio" name="sexo" value="no_contestar"> <p>No contestar</p> 
+                    </div>
+                    
+                    <div id="caja_email">
+                        <h3>Email:</h3>
+                        <input type="text" name="email" size="50"> <br>  
+                    </div>
+                    
+                    <div id="caja_servicio">
+                        <h3>Servicio a contratar:</h3> 
+                        <select name="servicio" size="1">
+                        <option value="seleccione">Seleccione</option>
+                        <option value="reforma">Reforma</option>
+                        <option value="fontaneria">Fontanería</option>
+                        <option value="electricidad">Electricidad</option>
+                        <option value="parquet">Parquet</option>
+                        </select> <br>
+                    </div>
+                    
+                    <div id="caja_reforma">
+                        <h3>Reforma:</h3> 
+                        <input type="checkbox" name="reforma_integral" value="integral"> <p>Integral</p> <br>
+                        <input type="checkbox" name="reforma_cocina" value="cocina"> <p>Cocina</p> <br>
+                        <input type="checkbox" name="reforma_banno" value="banno"> <p>Baño</p> <br>
+                        <input type="checkbox" name="no_reforma" value="no_reforma_valor"> <p>No quiero reforma</p> <br>
+                    </div>
+
+                    <div id="caja_info">
+                        <h3>Más información:</h3>
+                        <textarea cols="31" rows="10" name="info"></textarea>
+                    </div>
+
+                    <div id="caja_botones">
+                        <button type="reset">Borrar</button>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <footer>
+            práctica HTML y CSS
+        </footer>
+    </body>
+</html>

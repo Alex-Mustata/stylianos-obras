@@ -1,0 +1,79 @@
+@media screen and (max-width:600px) {
+ 
+    #menu{
+        font-size: small;
+    }
+
+    #cuerpo{
+        text-align: center;
+        animation: aparecer 2s 1;
+    }
+    #cuerpo h2{
+        margin-top: 75px;
+    }
+
+    #fotos_ma{
+        margin-top: 20px;
+        height: 585px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+    #fotos_ma div img{
+        width: 100%;
+        height: 100%;
+    }
+    #img_ma1{
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+    #fotos_ci{
+        margin-top: 20px;
+        height: 585px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+    #fotos_ci div img{
+        width: 100%;
+        height: 100%;
+    }
+    #img_ci{
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+    #fotos_g{
+        margin-top: 20px;
+        height: 585px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+    #fotos_g div img{
+        width: 100%;
+        height: 100%;
+    }
+    #img_g{
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+
+    @keyframes aparecer {
+        0%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+
+    footer{
+        margin-top: 75px;
+        width: 100%;
+        height: 300px;
+        background-color: black;
+    }
+}

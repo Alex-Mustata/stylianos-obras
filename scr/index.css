@@ -1,0 +1,258 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul{
+    list-style: none;
+}
+#menu a{
+    background-color: #ffbd59;
+    text-decoration: none;
+    color: black;
+}
+#menu a:hover{
+    color: #3647d1;
+}
+
+#contenedor_logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 190px;
+}
+#logo{
+    width: 400px;
+    object-fit: cover;
+}
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 10000000;
+}
+#menu{
+    font-size: x-large;
+    font-weight: 50;
+    background-color: #ffbd59;
+    padding: 15px;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+#menu li{
+    background-color: #ffbd59;
+}
+
+
+#menu li ul{
+    display: none;
+}
+#menu li:hover > ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu:link:hover{
+    color: #3647d1;
+}
+#menu li ul li:hover{
+    color: #3647d1;
+}
+
+
+#menu li ul li{
+    padding: 5px;
+}
+
+
+#cabecera{
+    width: 99.9%;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: aparecer 2s 1;
+}
+#fotos{
+    border-image: linear-gradient(to top right, #ffbd59 0%, #3647d1 100%) 1;
+    border-width: 4px;
+    border-style: solid;
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    width: 850px;
+    height: 500px;    
+    overflow: hidden;
+}
+#fotos_2{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    animation-name: fotos_animacion;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.casas1{
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    width:850px; 
+    height:500px;
+}
+.casas_new{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    width:850px; 
+    height:500px;
+    z-index: 1;
+    animation-name: fotos_animacion2;
+    animation-duration: 1000s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.casas1:hover{
+    animation-name: desaparecer;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes fotos_animacion {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: -400%;
+    }
+
+}
+@keyframes fotos_animacion2 {
+    0%{
+        top: -100.8%;
+    }
+    100%{
+        left: -100%;
+        top: -100.8%;
+    }
+
+}
+@keyframes desaparecer {
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+#cuerpo{
+    animation: aparecer 2s 1;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cuerpo h2 {
+    text-align: center;
+    font-size: 50px;
+}
+#cuerpo p {
+    text-align: center;
+    font-size: large;
+}
+
+#reformas{
+    height: 250px; 
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 75px;
+}
+#reformas div{
+    width: 350px;
+}
+#img_reforma{
+    position: relative;
+    border-image: linear-gradient(to top right, #ffbd59 0%, #3647d1 100%) 1;
+    border-width: 4px;
+    border-style: solid;
+}
+
+#fontaneria{
+    height: 250px; 
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 75px;
+}
+#fontaneria div{
+    width: 350px;
+}
+#img_fontaneria{
+    border-image: linear-gradient(to top right, #ffbd59 0%, #3647d1 100%) 1;
+    border-width: 4px;
+    border-style: solid;
+}
+
+#electricidad{
+    height: 250px; 
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 75px;
+}
+#electricidad div{
+    width: 350px;
+}
+#img_electricidad{
+    border-image: linear-gradient(to top right, #ffbd59 0%, #3647d1 100%) 1;
+    border-width: 4px;
+    border-style: solid;
+}
+
+#parquet{
+    height: 250px; 
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 75px;
+}
+#parquet div{
+    width: 350px;
+}
+#img_parquet{
+    border-image: linear-gradient(to top right, #ffbd59 0%, #3647d1 100%) 1;
+    border-width: 4px;
+    border-style: solid;
+}
+
+
+
+footer{
+    margin-top: 75px;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}

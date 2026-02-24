@@ -1,0 +1,82 @@
+@media screen and (max-width:600px) {
+    #menu{
+        font-size: small;
+    }
+
+
+    #cuerpo p {
+        text-align: center;
+        font-size: large;
+        margin-top: 15px;
+    }
+    #cuerpo h2{
+        text-align: center;
+        font-size: 35px;
+    }
+
+    #ref_int{
+        height: 200px; 
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 75px;
+    }
+    #ref_int div{
+        width: 200px;
+    }
+    #imagen_ref_int{
+        border-image: linear-gradient(to top right, #ffbd59 0%, #3647d1 100%) 1;
+        border-width: 4px;
+        border-style: solid;
+    }
+
+
+    #ref_cocina{
+        height: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 75px;
+    }
+    #ref_cocina div{
+        width: 200px;
+    }
+    #imagen_ref_cocina{
+        border-image: linear-gradient(to top right, #ffbd59 0%, #3647d1 100%) 1;
+        border-width: 4px;
+        border-style: solid;
+    }
+
+    #ref_banno{
+        height: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 75px;
+    }
+    #ref_banno div{
+        width: 200px;
+    }
+    #imagen_ref_banno{
+        border-image: linear-gradient(to top right, #ffbd59 0%, #3647d1 100%) 1;
+        border-width: 4px;
+        border-style: solid;
+    }
+
+    footer{
+        margin-top: 75px;
+        width: 100%;
+        height: 300px;
+        background-color: black;
+    }
+
+    @keyframes aparecer {
+        0%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+
+}
